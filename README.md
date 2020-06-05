@@ -8,7 +8,7 @@ docker run -d --name target2 systemdevformations/centos_ssh:v4
 docker run -d --rm --name target3 --env ROOT_PASSWORD=Passw0rd systemdevformations/alpine-ssh:v1  
 ```
 Retrouver le nom des containers  
-Faire un docker ps   
+Faire un docker ps   j
 172.17.0.5 = ubuntu = target 1
 172.17.0.6 = centos = target 2
 172.17.0.7 = alpine/root = target 3
