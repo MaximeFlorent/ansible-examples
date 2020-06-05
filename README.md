@@ -9,7 +9,9 @@ docker run -d --rm --name target3 --env ROOT_PASSWORD=Passw0rd systemdevformatio
 ```
 Retrouver le nom des containers  
 Faire un docker ps   
-
+172.17.0.5 = ubuntu = target 1
+172.17.0.6 = centos = target 2
+172.17.0.7 = alpine/root = target 3
 ```shell script
 CONTAINER ID        IMAGE                               COMMAND                  CREATED             STATUS                    PORTS                  NAMES
 f5034036dc56        systemdevformations/alpine-ssh:v1   "/entrypoint.sh"         11 hours ago        Up 11 hours               22/tcp                 target3
@@ -66,10 +68,12 @@ et faire la commande Ansible Ad-Hoc
 Faire ensuite  les Ad-Hoc commandes suivantes:  
 ``` code 
 ansible centos -m yum -a "name=elinks state=latest" -i ../inventory
+ansible centos-remote -b -m yum -a "name=elinks state=latest" -i ../inventory
 ansible centos -b -m yum -a "name=elinks state=latest" -i ../inventory
 ansible centos --list-hosts -i ../inventory
 ansible all -m setup -a "filter=ansible_default_ipv4"  -i ../inventory
 ansible all -m command -a "df -h" -i ../inventory
+// maj de tous les pacages de centos
 ansible centos -b -m yum -a "name=* state=latest" -f 100  -i ../inventory
 ansible centos -m file -a "dest=/home/centos/testfile state=touch" -i ../inventory 
 ```
@@ -83,4 +87,5 @@ Dans la directory ansible-examples editez le fichier ansible_ping.yml, et etudie
  ```shell script
 ansible-playbook  -i ../inventory_children ansible_ping.yml  --limit centosdocker
 ansible-playbook  -i ../inventory_children ansible_ping.yml  --limit centos
+ansible-playbook  -i ../inventory_children ansible_ping.yml // pour voir tt les machines
 ````

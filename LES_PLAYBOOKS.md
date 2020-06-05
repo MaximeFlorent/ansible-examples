@@ -11,7 +11,8 @@
 
 ### Le prompt et les conditions
 ```ansible-playbook -i ../inventory_children conditions.yml --limit centos```
-
+//pour voir le fichier : ssh centos@164.132.182.56
+//pui ll
 ### les boucles
 ```ansible-playbook -i ../inventory_children loops.yml --limit centos```
 
@@ -53,7 +54,7 @@ et  tapez
 Allez dans votre repository github pour creer un token   
 clicker sur les Settings de votre compte github et selectionnez  
 Developer Settings et ensuite Personnal Access Tokens 
-Creer un token et lui donner les droits pour creer un repo github.  
+Creer un token et lui donner les droits pour creer un repo github. = cocher repo  
 Dans votre home directory faire un ```vi token``` et copier votre
 token.  
 Toujours sous le prompt venv
@@ -66,7 +67,7 @@ Dans votre home directory toujours sous le prompt venv
 faire ```mkdir example-role```  
 et ```cd example-role```  
 ```ansible-galaxy init github.role```  
-creer un ficher playbook.yml    
+creer un ficher vi playbook.yml    
 ```yaml
 ---
 - name: use a dedicated Ansible module
@@ -91,10 +92,13 @@ copier le code suivant
   register: result
 ```
 Dans  example-role/github.role/defaults/main.yml
+récupérer le token dans github
 ```yaml
 # defaults file for github.role
 git_key: d6f90b4be8axxxxxxxxxxxxxxx
 ```
+Dans votre directory example-role, faire un 
+   cp -r ../ansible-examples/library .
 Revenez dans votre directory ou est installe le playbook et faire
 ``` ansible-playbook -i ../inventory_children playbook.yml```
 
@@ -105,11 +109,11 @@ Tapez
 ```ansible-vault encrypt  main.yml```   
 entrez votre mot de passe   
 mettrez ce mot de passe dans un fichier  
-```vi /home/<home_directory>/mysecret```   
-Vous pouvez executer le playbook avec   
-```ansible-playbook -i ../inventory_children --vault-password-file /home/<home_directory>/mysecret playbook.yml``` 
+```vi /home/centos/mysecret```   
+Vous pouvez executer le playbook dans example-role avec   
+```ansible-playbook -i ../inventory_children --vault-password-file /home/centos/mysecret playbook.yml``` 
 vous pouvez metter le path de ce fichier dans votre ```.bash_profile``` file.  
-```export  ANSIBLE_VAULT_PASSWORD_FILE=/home/<home>/mysecret```      
+```export  ANSIBLE_VAULT_PASSWORD_FILE=/home/centos/mysecret```      
 et vous entrez la commande sans vous soucier du fichier du mot de passe  
 ```ansible-playbook -i ../inventory_children playbook.yml``` 
 
