@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c06466ed-1121-4281-9358-dac240b4e14d" name="Default Changelist" comment="">
+    <list default="true" id="c06466ed-1121-4281-9358-dac240b4e14d" name="Default Changelist" comment="Change host inveotory3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory_children" beforeDir="false" afterPath="$PROJECT_DIR$/inventory_children" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/motd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/motd.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,7 @@
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../awx-11.2.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ansible-dynamic-repository" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -60,7 +60,7 @@
       <updated>1591263285826</updated>
       <workItem from="1591263287276" duration="9969000" />
       <workItem from="1591279295763" duration="326000" />
-      <workItem from="1591279742082" duration="9523000" />
+      <workItem from="1591279742082" duration="9841000" />
     </task>
     <task id="LOCAL-00001" summary="Change host inveotory">
       <created>1591358122570</created>
@@ -76,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591358226840</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Change host inveotory3">
+      <created>1591358707154</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591358707154</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,31 +108,32 @@
     <MESSAGE value="Added propagate ssh using delegate_to" />
     <MESSAGE value="Change host inveotory" />
     <MESSAGE value="Change host inveotory2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change host inveotory2" />
+    <MESSAGE value="Change host inveotory3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change host inveotory3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2118" y="0" key="#Deployment" timestamp="1587820575972">
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2118" y="0" key="#Deployment/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1587820575972" />
-    <state x="736" y="0" key="CommitChangelistDialog2" timestamp="1591358225009">
+    <state x="296" y="0" key="CommitChangelistDialog2" timestamp="1591358984060">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="736" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1591358225009" />
+    <state x="296" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1591358984060" />
     <state x="2693" y="186" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1587826622061" />
-    <state x="541" y="146" key="FileChooserDialogImpl" timestamp="1591347822571">
+    <state x="541" y="146" key="FileChooserDialogImpl" timestamp="1591358853989">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="541" y="146" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1591347822571" />
+    <state x="541" y="146" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1591358853989" />
     <state x="2488" y="171" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1587879212736" />
     <state x="301" y="74" key="SettingsEditor" timestamp="1591347879390">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="301" y="74" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1591347879390" />
-    <state x="460" y="213" key="Vcs.Push.Dialog.v2" timestamp="1591358229845">
+    <state x="460" y="213" key="Vcs.Push.Dialog.v2" timestamp="1591358711537">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="460" y="213" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1591358229845" />
+    <state x="460" y="213" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1591358711537" />
     <state x="2403" y="250" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1587826633871" />
   </component>
 </project>
